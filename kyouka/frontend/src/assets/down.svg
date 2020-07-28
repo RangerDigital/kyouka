@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.743 5.945">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efe7e7;
+      }
+    </style>
+  </defs>
+  <path id="minus-solid" class="cls-1" d="M25.761,208H1.982A1.982,1.982,0,0,0,0,209.982v1.982a1.982,1.982,0,0,0,1.982,1.982h23.78a1.982,1.982,0,0,0,1.982-1.982v-1.982A1.982,1.982,0,0,0,25.761,208Z" transform="translate(0 -208)"/>
+</svg>

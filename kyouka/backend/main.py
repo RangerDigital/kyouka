@@ -1,5 +1,7 @@
 import keyboard
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from starlette.responses import FileResponse 
 
 
 tags_metadata = [
@@ -14,6 +16,12 @@ tags_metadata = [
 ]
 
 app = FastAPI(title="Kyouka", openapi_tags=tags_metadata)
+app.mount("/public", StaticFiles(directory="public"), name="public")
+
+@app.get("/", include_in_schema=False)
+def root():
+    return FileResponse("public/index.html")
+
 
 
 @app.post("/track/play", tags=["Track"])
@@ -60,4 +68,4 @@ def down():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=7070)

@@ -1,0 +1,15 @@
+{
+    "name": "Kyouka",
+    "short_name": "Kyouka",
+    "lang": "en-EN",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#FF7171",
+    "icons": [
+      {
+        "src": "icon.png",
+        "sizes": "icon-512x512.png",
+        "type": "image/png"
+      }
+    ]
+  }
