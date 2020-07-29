@@ -7,18 +7,18 @@
     </section>
 
     <div class="buttons-container">
-      <BigButton @clickEvent="sendAction('/track/previous')"><img src="./assets/previous.svg"/></BigButton>
-      <BigButton @clickEvent="sendAction('/track/play')" class="red-bg"><img src="./assets/play.svg"/></BigButton>
-      <BigButton @clickEvent="sendAction('/track/next')"><img src="./assets/next.svg"/></BigButton>
+      <BigButton @clickEvent="sendAction('/track/previous')" aria-label="Previous Track"><img src="./assets/previous.svg"/></BigButton>
+      <BigButton @clickEvent="sendAction('/track/play')" class="red-bg" aria-label="Pause/Play Track"><img src="./assets/play.svg"/></BigButton>
+      <BigButton @clickEvent="sendAction('/track/next')" aria-label="Next Track"><img src="./assets/next.svg"/></BigButton>
     </div>
 
     <section>
       <p>Volume Control</p>
       <div class="divider"></div>
       <div class="buttons-container">
-        <SmallButton @clickEvent="sendAction('/volume/up')"><img src="./assets/up.svg"/></SmallButton>
-        <SmallButton @clickEvent="sendAction('/volume/mute')"><img src="./assets/mute.svg"/></SmallButton>
-        <SmallButton @clickEvent="sendAction('/volume/down')"><img src="./assets/down.svg"/></SmallButton>
+        <SmallButton @clickEvent="sendAction('/volume/up')" aria-label="Volume Up"><img src="./assets/up.svg"/></SmallButton>
+        <SmallButton @clickEvent="sendAction('/volume/mute')" aria-label="Mute"><img src="./assets/mute.svg"/></SmallButton>
+        <SmallButton @clickEvent="sendAction('/volume/down')" aria-label="Volume Down"><img src="./assets/down.svg"/></SmallButton>
       </div>
     </section>
 
@@ -78,7 +78,7 @@
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 600;
     font-family: "Baloo Thambi 2";
     color: #3d3d3d;
