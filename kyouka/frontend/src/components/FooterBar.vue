@@ -11,27 +11,27 @@
 </template>
 
 <style scoped>
-.footer-flex {
-  max-height: 1%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+  .footer-flex {
+    max-height: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-.footer-flex a {
-  text-decoration: none;
-}
+  .footer-flex a {
+    text-decoration: none;
+  }
 
-.text-label {
-  color: #aaa5a5;
-  margin: 1em;
-  text-align: center;
-  font-size: 1.2rem;
-  transition: all 0.5s;
-}
+  .text-label {
+    color: #aaa5a5;
+    margin: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+  }
 
-.text-label:hover {
-  color: #ff7171;
-}
+  .text-label:hover {
+    color: #ff7171;
+  }
 </style>

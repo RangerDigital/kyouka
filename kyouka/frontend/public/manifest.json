@@ -1,15 +1,17 @@
 {
-    "name": "Kyouka",
-    "short_name": "Kyouka",
-    "lang": "en-EN",
-    "start_url": "/",
-    "display": "standalone",
-    "theme_color": "#FF7171",
-    "icons": [
-      {
-        "src": "icon.png",
-        "sizes": "icon-512x512.png",
-        "type": "image/png"
-      }
-    ]
-  }
+  "name": "Kyouka",
+  "short_name": "Kyouka",
+  "description": "Remote control for your keyboard's media keys.",
+  "lang": "en-EN",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#FF7171",
+  "background_color": "#FF7171",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "icon-512x512.png",
+      "type": "image/png"
+    }
+  ]
+}
