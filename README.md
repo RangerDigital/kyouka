@@ -14,6 +14,12 @@ Source code of **Kyouka**, a web application build with **FastAPI** and **Vue.js
 
 <br>
 
+<p align="center">
+	<img src="mockup.png" alt="Takagi - Mobile Mockup" width=800/>
+</p>
+
+<br>
+
 ## 🚧 Contributing
 
 **You are more than welcome to help me improve Kyouka!**
