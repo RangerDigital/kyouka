@@ -3,13 +3,14 @@
     <section class="header">
       <h1>Kyouka</h1>
       <p>Server: {{ getServer }}</p>
+      <p class="error">{{ errorMsg }}</p>
     </section>
 
     <div class="buttons-container">
       <BigButton @clickEvent="sendAction('/track/previous')"
         ><img src="./assets/next.svg"
       /></BigButton>
-      <BigButton @clickEvent="sendAction('/track/play')" class="red-bg"
+      <BigButton @clickEvent="sendAction('/track/play'); window.navigator.vibrate(50)" class="red-bg"
         ><img src="./assets/play.svg"
       /></BigButton>
       <BigButton @clickEvent="sendAction('/track/next')"
@@ -49,16 +50,22 @@ export default {
     FooterBar,
     SmallButton,
   },
+  data() {
+    return {
+      errorMsg: "",
+    };
+  },
   methods: {
     sendAction(action) {
       this.$http
-        .post("http://" + location.host + action)
+        .post("http://" + location.host + action, {timeout: 1000})
         .then((response) => {
           console.log(response);
-          window.navigator.vibrate(50);
+          this.errorMsg = "";
         })
         .catch((error) => {
           console.log(error.response.data.msg);
+          this.errorMsg = "Something went wrong while connecting to the server!"
           window.navigator.vibrate([50, 50, 50, 50, 50]);
         });
     },
@@ -111,6 +118,7 @@ p {
 
 .g-clickable {
   cursor: pointer;
+  outline: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -123,9 +131,6 @@ p {
 
 .red-bg {
   background-color: #ff7171 !important;
-
-  box-shadow: inset 31px 31px 62px #d96060, 
-            inset -31px -31px 62px #ff8282 !important; 
 }
 
 .divider {
@@ -141,6 +146,15 @@ p {
 
 .header {
   align-self: flex-start;
+  text-align: left; 
+}
+
+.header p {
+  text-align: left; 
+}
+
+.error {
+  color: #ff7171;
 }
 
 @media only screen and (min-width: 1500px) {

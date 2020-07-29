@@ -34,6 +34,7 @@ def play_track():
 @app.post("/track/next", tags=["Track"])
 def next_track():
     keyboard.press("next track")
+    keyboard.press_and_release("shift+n")
 
     return {"status": "success"}
 
