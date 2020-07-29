@@ -14,7 +14,9 @@
 
 > 💡 Currently tested only on Windows 10 machine, but should work on Linux too!
 
-It allows you to control YouTube music playing *(Or any other player!)* from your desktop while in bed and away from the keyboard.  
+It's a single Python process running on your desktop that simulates keyboard media button presses and provides you with a web interface that can be accessed in your local network.
+
+It allows you to control YouTube music playing *(Or any other media player)* from your desktop while in bed and away from the keyboard.  
 How awesome is that!
 
 <br>
@@ -25,17 +27,11 @@ How awesome is that!
 
 <br>
 
-**Kyouka** is a single Python process running on your desktop that simulates keyboard media button presses and provides you with a web interface that can be accessed in your local network.
-
-<br>
-
 ## 🔥 Getting Started
 
 **It's easy to get started using Kyouka!**
 
 This project uses **Python** as a backend language, so make sure you have It installed!
-
-> 💡 Execute every command in the ./kyouka directory!
 
 - Download `Kyouka_v1.x.x.zip` package from the **Releases** tab on the right and unpack It.
 
@@ -55,6 +51,8 @@ This project uses **Python** as a backend language, so make sure you have It ins
   ```bash
   http://127.0.0.1:7070
   ```
+
+> 💡 Execute every command in the ./kyouka directory!
 
 <br>
 
